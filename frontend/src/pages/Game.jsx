@@ -16,12 +16,18 @@ function Game() {
   const tempoGame ={ facil: 15, medio: 10, dificil: 5 }; // tempo de jogo baseado na dificuldade
   const acertosNecessarios = { facil: 5, medio: 10, dificil: 20 }; // acertos necessários para vencer baseado na dificuldade
 
+  const API_URL = 
+    window.location.hostname === 'localhost'
+      ? 'http://localhost:3000'
+      : 'https://f1-driver-search.onrender.com'; 
+      // Identifica se a execução é local ou pelo render
+
   // função que inicia o jogo, recebe o nível de dificuldade
   const iniciarJogo = async (nivel) => {
     setCarregando(true); // ativa o carregamento
     try {
       // requisição para obter dados dos pilotos da API OpenF1
-      const res = await fetch('http://localhost:3000/pilotos');//nao precisa mexer direto na API f1.js
+      const res = await fetch(`${API_URL}/pilotos`);//nao precisa mexer direto na API f1.js
       const data = await res.json(); // converte a resposta para JSON
       setPilotosRestantes(data); // armazena os pilotos restantes
       setModo('jogando'); // define o modo como "jogando"
