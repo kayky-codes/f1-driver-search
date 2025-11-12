@@ -4,7 +4,7 @@ body {
   padding: 0px;
   text-align: center;
   /* define a imagem de fundo, com ajuste para cobrir toda a tela */
-  background-image: url('.img/img_fundo.jpg');
+  background-image: url('/img/img_fundo.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
