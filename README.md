@@ -1,5 +1,7 @@
 # [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Bem+vindo;Me+sigam+nas+redes+sociais)](https://github.com/ykyak77)
 
+# Live: https://f1-driver-search.onrender.com
+
 # 🏁🏎 F1 Driver Search and Minigame 
 
 Este repositório contém um jogo interativo onde o jogador deve adivinhar o número do carro do pilotos de Fórmula 1, baseado em seu nome e foto. E um sistema simples de consulta de pilotos de Fórmula 1. A aplicação utiliza dados em tempo real da [API OpenF1](https://openf1.org/), com um front-end desenvolvido em React + Vite, e um back-end construído com Node.js + Express.
