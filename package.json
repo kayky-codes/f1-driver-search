@@ -1,13 +1,14 @@
 {
-    "name": "f1-react-projeto",
-    "version": "1.0.0",
-    "description": "Projeto React + API OpenF1 rodando juntos",
-    "main": "index.js",
-    "scripts": {
-      "dev": "concurrently \"node backend/f1.js\" \"npm run dev --prefix frontend\""
-    },
-    "devDependencies": {
-      "concurrently": "^8.2.2"
-    }
+  "name": "f1-driver-search",
+  "version": "1.0.0",
+  "description": "Projeto completo React + API OpenF1",
+  "scripts": {
+    "start": "node backend/f1.js",
+    "build": "npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "engines": {
+    "node": "18.x"
   }
+}
+
   
