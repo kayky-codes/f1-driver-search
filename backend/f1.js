@@ -2,6 +2,7 @@
 const express = require('express'); // framework para construir o servidor
 const axios = require('axios'); // cliente HTTP para fazer requisições à API externa
 const cors = require('cors'); // para habilitar CORS e permitir acesso de outras origens
+const path = require('path');
 
 // inicializando a aplicação Express
 const app = express();
@@ -11,6 +12,8 @@ const BASE_URL = 'https://api.openf1.org/v1/drivers';
 
 // habilitando CORS para permitir requisições de qualquer origem
 app.use(cors());
+
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
 // rota para buscar dados dos pilotos
 app.get('/search', async (req, res) => {
@@ -72,6 +75,11 @@ app.get('/pilotos', async (req, res) => {
     console.error('Erro ao buscar pilotos:', error);
     res.status(500).json({ error: 'Erro ao buscar dados dos pilotos' });
   }
+});
+
+// Rota final: se não encontrar rota, devolve o index.html do React
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
 });
 
 // inicia o servidor
