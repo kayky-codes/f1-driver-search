@@ -37,7 +37,7 @@ function App() {
     }
 
     try {
-      const response = await fetch(`${API_BASE_URL}/search?${searchParam}=${queryParam}`);
+      const response = await fetch(`${API_URL}/search?${searchParam}=${queryParam}`);
 
       // Verifique se a resposta é JSON
       const contentType = response.headers.get("content-type");
