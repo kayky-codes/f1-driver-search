@@ -1,8 +1,6 @@
 # [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Bem+vindo;Me+sigam+nas+redes+sociais)](https://github.com/ykyak77)
 
-## 🚀 Acesse o projeto online: 
-👉 [f1-driver-search no Render](https://f1-driver-search.onrender.com)
-
+# 🚀 Acesse o projeto online: [f1-driver-search no Render](https://f1-driver-search.onrender.com)
 
 # 🏁🏎 F1 Driver Search and Minigame 
 
