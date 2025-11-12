@@ -10,6 +10,10 @@ function App() {
   const [pilotos, setPilotos] = useState([]);
   const [erro, setErro] = useState('');
 
+  const API_URL = window.location.hostname === 'localhost'
+  ? 'http://localhost:3000'
+  : 'https://f1-driver-search.onrender.com';
+
   const limparResultado = () => {
     setPilotos([]);
     setErro('');
@@ -33,7 +37,7 @@ function App() {
     }
 
     try {
-      const response = await fetch(`http://localhost:3000/search?${searchParam}=${queryParam}`);
+      const response = await fetch(`${API_BASE_URL}/search?${searchParam}=${queryParam}`);
 
       // Verifique se a resposta é JSON
       const contentType = response.headers.get("content-type");
