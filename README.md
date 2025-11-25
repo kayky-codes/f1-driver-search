@@ -1,4 +1,4 @@
-# [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Bem+vindo;Me+sigam+nas+redes+sociais)](https://github.com/ykyak77)
+# [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Bem+vindo;Me+sigam+nas+redes+sociais)](www.linkedin.com/in/kayky-teixeira)
 
 # 🚀 Acesse o projeto online: [f1-driver-search no Render](https://f1-driver-search.onrender.com)
 
